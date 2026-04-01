@@ -10,9 +10,9 @@ export default function Hero() {
           <span className="text-[#4f46e5]">organized and clear</span>
         </h1>
         <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-          MailRecap scans, sorts, and summarizes every piece of mail you receive.
-          Stay on top of deliveries, bills, and important letters—without touching
-          a single envelope.
+          Never miss a bill, deadline, or check buried in your mailbox again.
+          MailRecap scans and summarizes every piece of mail so you know what
+          matters and what to do—in seconds.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

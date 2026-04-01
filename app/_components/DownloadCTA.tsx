@@ -6,7 +6,7 @@ export default function DownloadCTA() {
           Take control of your mailbox today
         </h2>
         <p className="text-indigo-200 text-lg max-w-xl mx-auto mb-10">
-          Join thousands of households who never miss important mail. Download MailRecap free on the App Store.
+          Join thousands of households who never miss important mail. Download MailRecap free on iOS and Android.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -19,6 +19,18 @@ export default function DownloadCTA() {
             <span>
               <span className="block text-xs text-slate-500 leading-none">Download on the</span>
               <span className="block text-base leading-tight">App Store</span>
+            </span>
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-3 bg-white text-slate-900 px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-100 transition-colors w-full sm:w-auto justify-center"
+          >
+            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current" aria-hidden="true">
+              <path d="M3.18 23.76c.3.17.64.24.99.2l.1-.03 11.65-6.6-2.55-2.55-10.19 8.98zm-1.62-20.4C1.22 3.7 1 4.12 1 4.64v14.72c0 .52.22.94.56 1.24l.07.06 8.25-8.25v-.19L1.56 3.3l-.01.06zm18.47 7.2l-2.34-1.33-2.82 2.82 2.82 2.82 2.37-1.34c.67-.38.67-1.59-.03-1.97zM4.17.28L15.82 6.9 13.27 9.45 3.08.47l.02-.02c.28-.2.66-.24 1.07-.17z" />
+            </svg>
+            <span>
+              <span className="block text-xs text-slate-500 leading-none">Get it on</span>
+              <span className="block text-base leading-tight">Google Play</span>
             </span>
           </a>
         </div>
