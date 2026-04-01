@@ -15,6 +15,9 @@ export default function Navbar() {
           <a href="#features" className="hover:text-slate-900 transition-colors">Features</a>
           <a href="#how-it-works" className="hover:text-slate-900 transition-colors">How it works</a>
           <a href="#pricing" className="hover:text-slate-900 transition-colors">Pricing</a>
+          <a href="/creators-lab" className="hover:text-[#D42232] transition-colors font-semibold text-[#0C1461]">
+            Creators Lab ✦
+          </a>
         </div>
         <a
           href="#download"
