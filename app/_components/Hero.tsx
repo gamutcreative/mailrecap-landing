@@ -1,7 +1,15 @@
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-[#E8EAF2] to-white">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-[#E8EAF2] to-white relative overflow-hidden">
+      {/* Airmail stripe accent at bottom */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-2 opacity-40"
+        style={{
+          background:
+            "repeating-linear-gradient(-45deg, #D42232, #D42232 8px, #ffffff 8px, #ffffff 16px, #0C1461 16px, #0C1461 24px, #ffffff 24px, #ffffff 32px)",
+        }}
+      />
+      <div className="max-w-6xl mx-auto text-center relative z-10">
         <div className="inline-flex items-center gap-2 bg-[#D42232]/10 text-[#D42232] px-4 py-1.5 rounded-full text-sm font-medium mb-8">
           <span>★</span> 5 free scans to get started
         </div>

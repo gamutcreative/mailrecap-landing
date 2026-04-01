@@ -1,16 +1,24 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-400 py-12 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+    <footer className="bg-[#0C1461] text-slate-300 py-12 px-4 sm:px-6 relative overflow-hidden">
+      {/* Airmail stripe accent at top */}
+      <div
+        className="absolute top-0 left-0 right-0 h-2 opacity-60"
+        style={{
+          background:
+            "repeating-linear-gradient(-45deg, #D42232, #D42232 8px, #ffffff 8px, #ffffff 16px, #E8EAF2 16px, #E8EAF2 24px, #ffffff 24px, #ffffff 32px)",
+        }}
+      />
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
           <div>
             <a href="/" className="flex items-center gap-2 mb-3">
               <span className="text-[#D42232]">✉</span>
               <span
-                className="text-xl text-white"
+                className="text-xl text-[#D42232]"
                 style={{ fontFamily: "var(--font-pacifico)" }}
               >
-                MailRecap
+                mailrecap.co
               </span>
             </a>
             <p className="text-sm max-w-xs leading-relaxed">
@@ -44,7 +52,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+        <div className="border-t border-[#1a2480] pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
           <p>© {new Date().getFullYear()} MailRecap. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="#" aria-label="Twitter/X" className="hover:text-white transition-colors">𝕏</a>

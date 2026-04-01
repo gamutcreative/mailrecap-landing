@@ -31,7 +31,7 @@ export default function HowItWorks() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2
-            className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4"
+            className="text-3xl sm:text-4xl font-extrabold text-[#0C1461] mb-4"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Up and running in minutes
