@@ -4,11 +4,17 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
           <div>
-            <a href="/" className="flex items-center gap-2 font-bold text-xl text-white mb-3">
-              <span className="text-[#4f46e5]">✉</span> MailRecap
+            <a href="/" className="flex items-center gap-2 mb-3">
+              <span className="text-[#D42232]">✉</span>
+              <span
+                className="text-xl text-white"
+                style={{ fontFamily: "var(--font-pacifico)" }}
+              >
+                MailRecap
+              </span>
             </a>
             <p className="text-sm max-w-xs leading-relaxed">
-              Trusted, fast, and transparent physical mail management.
+              Scan, understand, and act on your physical mail — in English and Spanish.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">

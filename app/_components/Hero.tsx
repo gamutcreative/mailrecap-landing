@@ -1,23 +1,24 @@
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-slate-50 to-white">
+    <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-[#E8EAF2] to-white">
       <div className="max-w-6xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 bg-[#ccfbf1] text-[#0d9488] px-4 py-1.5 rounded-full text-sm font-medium mb-8">
-          <span>★</span> Trusted by thousands of households
+        <div className="inline-flex items-center gap-2 bg-[#D42232]/10 text-[#D42232] px-4 py-1.5 rounded-full text-sm font-medium mb-8">
+          <span>★</span> 5 free scans to get started
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 max-w-4xl mx-auto">
-          Your physical mail,{" "}
-          <span className="text-[#4f46e5]">organized and clear</span>
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 max-w-4xl mx-auto"
+          style={{ fontFamily: "var(--font-playfair)" }}
+        >
+          Scan, understand, and act on your mail{" "}
+          <span className="text-[#D42232]">— without the pile-up</span>
         </h1>
         <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-          MailRecap scans, sorts, and summarizes every piece of mail you receive.
-          Stay on top of deliveries, bills, and important letters—without touching
-          a single envelope.
+          Take a photo, get a plain-language summary, and know exactly what to do next.
+          MailRecap turns every piece of mail into a clear, actionable item.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div id="download" className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
           <a
-            id="download"
-            href="#"
+            href="https://apps.apple.com/app/mailrecap"
             className="flex items-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-700 transition-colors w-full sm:w-auto justify-center"
           >
             <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current" aria-hidden="true">
@@ -29,47 +30,72 @@ export default function Hero() {
             </span>
           </a>
           <a
+            href="https://play.google.com/store/apps/details?id=com.mailrecap"
+            className="flex items-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-700 transition-colors w-full sm:w-auto justify-center"
+          >
+            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current" aria-hidden="true">
+              <path d="M3.18 23.76c.3.17.64.24.99.2l.11-.03L13.65 12 4.28.07l-.11-.03a1.4 1.4 0 00-.99.2C2.85.57 2.5 1.22 2.5 2v19.76c0 .78.35 1.43.68 2zm14.4-12.42l-2.5-2.5-8.18-8.18 9.59 5.54a1.5 1.5 0 010 2.6l-.91.54zm-10.68 10.1l8.18-8.18 2.5-2.5.91.54a1.5 1.5 0 010 2.6l-9.59 5.54z" />
+            </svg>
+            <span>
+              <span className="block text-xs text-slate-300 leading-none">Get it on</span>
+              <span className="block text-base leading-tight">Google Play</span>
+            </span>
+          </a>
+          <a
             href="#how-it-works"
             className="px-6 py-3.5 rounded-xl border-2 border-slate-200 text-slate-700 font-semibold hover:border-slate-400 transition-colors w-full sm:w-auto text-center"
           >
             See how it works
           </a>
         </div>
-        {/* Mail mockup illustration */}
-        <div className="mt-16 max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl shadow-slate-200 border border-slate-100 overflow-hidden">
-          <div className="bg-[#4f46e5] px-6 py-3 flex items-center gap-3">
-            <div className="flex gap-1.5">
-              <div className="w-3 h-3 rounded-full bg-white/30"></div>
-              <div className="w-3 h-3 rounded-full bg-white/30"></div>
-              <div className="w-3 h-3 rounded-full bg-white/30"></div>
-            </div>
-            <span className="text-white/80 text-sm font-medium">mailrecap.co – Your Inbox</span>
-          </div>
-          <div className="p-6 space-y-3">
-            {[
-              { from: "Chase Bank", subject: "Monthly statement ready", tag: "Finance", date: "Today" },
-              { from: "USPS", subject: "Package arriving Thursday", tag: "Delivery", date: "Today" },
-              { from: "City of Portland", subject: "Water bill – $48.00 due", tag: "Bills", date: "Yesterday" },
-              { from: "Amazon", subject: "Your order has shipped", tag: "Delivery", date: "2 days ago" },
-            ].map((item, i) => (
-              <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-slate-50 hover:bg-slate-100 transition-colors cursor-pointer">
-                <div className="flex items-center gap-3 min-w-0">
-                  <div className="w-9 h-9 rounded-full bg-[#4f46e5]/10 flex items-center justify-center shrink-0 text-[#4f46e5] font-bold text-sm">
-                    {item.from[0]}
+
+        {/* Mobile app mockup */}
+        <div className="mt-16 max-w-xs mx-auto">
+          <div className="relative bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-400/30 border-4 border-slate-800">
+            <div className="absolute top-3 left-1/2 -translate-x-1/2 w-20 h-5 bg-slate-900 rounded-full z-10"></div>
+            <div className="bg-[#E8EAF2] rounded-[2rem] overflow-hidden">
+              <div className="bg-[#0C1461] px-5 pt-7 pb-3 flex items-center justify-between">
+                <span
+                  className="text-white text-lg"
+                  style={{ fontFamily: "var(--font-pacifico)" }}
+                >
+                  MailRecap
+                </span>
+                <span className="text-white/70 text-xs">9:41 AM</span>
+              </div>
+              <div className="p-3 space-y-2 bg-white">
+                {[
+                  { from: "Chase Bank", subject: "Statement ready — action needed", urgent: true },
+                  { from: "USPS", subject: "Package arriving Thursday", urgent: false },
+                  { from: "City of Portland", subject: "Water bill — $48 due in 5 days", urgent: true },
+                  { from: "Amazon", subject: "Your return was received", urgent: false },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                    <div className="w-8 h-8 rounded-full bg-[#D42232]/10 flex items-center justify-center shrink-0 text-[#D42232] font-bold text-xs">
+                      {item.from[0]}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-slate-900 text-xs truncate">{item.from}</p>
+                      <p className="text-slate-500 text-[10px] truncate">{item.subject}</p>
+                    </div>
+                    {item.urgent && (
+                      <div className="w-2 h-2 rounded-full bg-[#D42232] shrink-0"></div>
+                    )}
                   </div>
-                  <div className="min-w-0">
-                    <p className="font-semibold text-slate-900 text-sm truncate">{item.from}</p>
-                    <p className="text-slate-500 text-xs truncate">{item.subject}</p>
-                  </div>
+                ))}
+              </div>
+              <div className="bg-white border-t border-slate-100 px-4 py-2 flex justify-around">
+                <div className="flex flex-col items-center gap-0.5">
+                  <span className="text-[9px] text-[#D42232] font-medium">Inbox</span>
                 </div>
-                <div className="flex items-center gap-3 shrink-0 ml-4">
-                  <span className="hidden sm:block text-xs px-2 py-0.5 rounded-full bg-[#ccfbf1] text-[#0d9488] font-medium">
-                    {item.tag}
-                  </span>
-                  <span className="text-xs text-slate-400 whitespace-nowrap">{item.date}</span>
+                <div className="flex flex-col items-center gap-0.5">
+                  <span className="text-[9px] text-slate-400">Alerts</span>
+                </div>
+                <div className="flex flex-col items-center gap-0.5">
+                  <span className="text-[9px] text-slate-400">Settings</span>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>

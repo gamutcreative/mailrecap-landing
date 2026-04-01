@@ -24,10 +24,13 @@ const testimonials = [
 
 export default function SocialProof() {
   return (
-    <section className="py-24 px-4 sm:px-6 bg-slate-50">
+    <section className="py-24 px-4 sm:px-6 bg-[#E8EAF2]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+          <h2
+            className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
             Loved by people who value their time
           </h2>
           <div className="flex items-center justify-center gap-1 mb-2">
@@ -37,7 +40,7 @@ export default function SocialProof() {
               </svg>
             ))}
           </div>
-          <p className="text-slate-500 text-sm">4.9 out of 5 stars · 2,000+ reviews</p>
+          <p className="text-slate-500 text-sm">4.9 out of 5 stars · Early access reviews</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t) => (
@@ -51,7 +54,7 @@ export default function SocialProof() {
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-6 italic">&ldquo;{t.quote}&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#4f46e5]/10 flex items-center justify-center text-[#4f46e5] font-bold">
+                <div className="w-10 h-10 rounded-full bg-[#D42232]/10 flex items-center justify-center text-[#D42232] font-bold">
                   {t.avatar}
                 </div>
                 <div>
