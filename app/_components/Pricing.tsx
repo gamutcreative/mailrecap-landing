@@ -45,7 +45,7 @@ export default function Pricing() {
           >
             Simple, transparent pricing
           </h2>
-          <p className="text-lg text-slate-500 max-w-xl mx-auto">
+          <p className="text-lg text-[#5A5F80] max-w-xl mx-auto">
             Start with 5 free MailRecap+ scans. No credit card required.
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function Pricing() {
               className={`rounded-2xl p-8 border ${
                 plan.highlight
                   ? "border-[#D42232] bg-[#0C1461] text-white shadow-xl"
-                  : "border-slate-200 bg-white"
+                  : "border-[#E8EAF2] bg-white"
               }`}
             >
               {plan.highlight && (
@@ -64,29 +64,29 @@ export default function Pricing() {
                   Most Popular
                 </div>
               )}
-              <h3 className={`text-xl font-bold mb-1 ${plan.highlight ? "text-white" : "text-slate-900"}`}>
+              <h3 className={`text-xl font-bold mb-1 ${plan.highlight ? "text-white" : "text-[#0C1461]"}`}>
                 {plan.name}
               </h3>
               <div className="flex items-end gap-1 mb-1">
-                <span className={`text-4xl font-extrabold ${plan.highlight ? "text-white" : "text-slate-900"}`}>
+                <span className={`text-4xl font-extrabold ${plan.highlight ? "text-white" : "text-[#0C1461]"}`}>
                   {plan.monthlyPrice}
                 </span>
-                <span className={`text-sm pb-1 ${plan.highlight ? "text-blue-200" : "text-slate-500"}`}>
+                <span className={`text-sm pb-1 ${plan.highlight ? "text-blue-200" : "text-[#5A5F80]"}`}>
                   /month
                 </span>
               </div>
-              <p className={`text-sm mb-1 ${plan.highlight ? "text-blue-200" : "text-slate-500"}`}>
+              <p className={`text-sm mb-1 ${plan.highlight ? "text-blue-200" : "text-[#5A5F80]"}`}>
                 or {plan.annualPrice}/year
               </p>
               <p className="text-xs font-semibold text-[#D42232] mb-4">{plan.annualSaving}</p>
-              <p className={`text-sm mb-6 ${plan.highlight ? "text-blue-200" : "text-slate-500"}`}>
+              <p className={`text-sm mb-6 ${plan.highlight ? "text-blue-200" : "text-[#5A5F80]"}`}>
                 {plan.description}
               </p>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm">
                     <span className="mt-0.5 font-bold text-[#D42232]">✓</span>
-                    <span className={plan.highlight ? "text-blue-100" : "text-slate-600"}>{f}</span>
+                    <span className={plan.highlight ? "text-blue-100" : "text-[#5A5F80]"}>{f}</span>
                   </li>
                 ))}
               </ul>

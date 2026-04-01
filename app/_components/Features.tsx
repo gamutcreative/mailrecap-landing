@@ -48,7 +48,7 @@ export default function Features() {
           >
             Everything you need to manage your mail
           </h2>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+          <p className="text-lg text-[#5A5F80] max-w-2xl mx-auto">
             MailRecap brings digital-inbox clarity to your physical mailbox — in English and Spanish.
           </p>
         </div>
@@ -56,11 +56,11 @@ export default function Features() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="p-6 rounded-2xl border border-slate-100 hover:border-[#D42232]/30 hover:shadow-lg hover:shadow-[#D42232]/5 transition-all"
+              className="p-6 rounded-2xl border border-[#E8EAF2] hover:border-[#D42232]/30 hover:shadow-lg hover:shadow-[#D42232]/5 transition-all"
             >
               <div className="text-3xl mb-4">{f.icon}</div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">{f.title}</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">{f.description}</p>
+              <h3 className="text-lg font-bold text-[#0C1461] mb-2">{f.title}</h3>
+              <p className="text-[#5A5F80] text-sm leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>

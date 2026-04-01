@@ -36,7 +36,7 @@ export default function HowItWorks() {
           >
             Up and running in minutes
           </h2>
-          <p className="text-lg text-slate-500 max-w-xl mx-auto">
+          <p className="text-lg text-[#5A5F80] max-w-xl mx-auto">
             Four simple steps to transform how you handle physical mail.
           </p>
         </div>
@@ -46,10 +46,10 @@ export default function HowItWorks() {
               {i < steps.length - 1 && (
                 <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-[#D42232]/20 -translate-x-4 z-0" />
               )}
-              <div className="relative z-10 bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+              <div className="relative z-10 bg-white rounded-2xl p-8 shadow-sm border border-[#E8EAF2]">
                 <div className="text-4xl font-extrabold text-[#D42232]/20 mb-4">{step.number}</div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
-                <p className="text-slate-500 leading-relaxed">{step.description}</p>
+                <h3 className="text-xl font-bold text-[#0C1461] mb-3">{step.title}</h3>
+                <p className="text-[#5A5F80] leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}
