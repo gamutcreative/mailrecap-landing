@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-brand-navy: #1C3A5C;
-  --color-brand-navy-light: #2A4F7C;
+  --color-brand-red: #D42232;
+  --color-brand-red-dark: #b01c29;
   --color-brand-bg: #FAF8F4;
-  --color-brand-coral: #E07B54;
-  --color-brand-coral-dark: #C5623A;
-  --color-brand-text: #1A1A2E;
+  --color-brand-bg-alt: #F3EFE9;
+  --color-brand-dark: #111827;
   --color-brand-muted: #5A6170;
   --color-brand-border: #E8E3DC;
 }
@@ -17,5 +16,5 @@ html {
 
 body {
   background: #FAF8F4;
-  color: #1A1A2E;
+  color: #111827;
 }

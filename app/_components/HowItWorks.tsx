@@ -40,10 +40,10 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-24 px-4 sm:px-6 bg-[#FAF8F4]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-widest uppercase text-[#E07B54] mb-3">
+          <p className="text-sm font-semibold tracking-widest uppercase text-[#D42232] mb-3">
             Simple by design
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1C3A5C] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#111827] mb-4">
             How it works
           </h2>
           <p className="text-lg text-[#5A6170] max-w-xl mx-auto">
@@ -59,11 +59,11 @@ export default function HowItWorks() {
             <div key={step.number} className="relative flex flex-col items-center text-center">
               {/* Step icon circle */}
               <div className="relative z-10 w-28 h-28 rounded-full bg-white border-2 border-[#E8E3DC] flex flex-col items-center justify-center mb-6 shadow-sm">
-                <div className="text-[#E07B54] mb-1">{step.icon}</div>
+                <div className="text-[#D42232] mb-1">{step.icon}</div>
                 <span className="text-xs font-bold text-[#5A6170]">{step.number}</span>
               </div>
 
-              <h3 className="text-xl font-bold text-[#1C3A5C] mb-3">{step.title}</h3>
+              <h3 className="text-xl font-bold text-[#111827] mb-3">{step.title}</h3>
               <p className="text-[#5A6170] leading-relaxed">{step.description}</p>
             </div>
           ))}

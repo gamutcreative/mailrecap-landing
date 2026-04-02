@@ -58,10 +58,10 @@ export default function TrustSignals() {
       <div className="max-w-6xl mx-auto">
         {/* Rating headline */}
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-widest uppercase text-[#E07B54] mb-3">
+          <p className="text-sm font-semibold tracking-widest uppercase text-[#D42232] mb-3">
             Trusted by households
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1C3A5C] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#111827] mb-4">
             Loved by people who value their time
           </h2>
           <div className="flex items-center justify-center gap-1 mb-2">
@@ -87,11 +87,11 @@ export default function TrustSignals() {
               </div>
               <p className="text-[#5A6170] text-sm leading-relaxed mb-6 italic">&ldquo;{t.quote}&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#E07B54]/15 flex items-center justify-center text-[#E07B54] font-bold">
+                <div className="w-10 h-10 rounded-full bg-[#D42232]/15 flex items-center justify-center text-[#D42232] font-bold">
                   {t.avatar}
                 </div>
                 <div>
-                  <p className="font-semibold text-[#1C3A5C] text-sm">{t.name}</p>
+                  <p className="font-semibold text-[#111827] text-sm">{t.name}</p>
                   <p className="text-[#5A6170] text-xs">{t.role}</p>
                 </div>
               </div>
@@ -103,11 +103,11 @@ export default function TrustSignals() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {trustBadges.map((badge) => (
             <div key={badge.label} className="flex items-center gap-4 bg-white rounded-2xl p-6 border border-[#E8E3DC]">
-              <div className="shrink-0 w-12 h-12 rounded-xl bg-[#1C3A5C]/8 text-[#1C3A5C] flex items-center justify-center">
+              <div className="shrink-0 w-12 h-12 rounded-xl bg-[#111827]/8 text-[#111827] flex items-center justify-center">
                 {badge.icon}
               </div>
               <div>
-                <p className="font-bold text-[#1C3A5C]">{badge.label}</p>
+                <p className="font-bold text-[#111827]">{badge.label}</p>
                 <p className="text-sm text-[#5A6170]">{badge.sublabel}</p>
               </div>
             </div>

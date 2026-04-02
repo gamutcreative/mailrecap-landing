@@ -10,10 +10,10 @@ export default function Mission() {
       }}
     >
       {/* Warm overlay */}
-      <div className="absolute inset-0 bg-[#1C3A5C]/80" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[#111827]/80" aria-hidden="true" />
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
-        <p className="text-sm font-semibold tracking-widest uppercase text-[#E07B54] mb-6">
+        <p className="text-sm font-semibold tracking-widest uppercase text-[#D42232] mb-6">
           Why we built this
         </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-white leading-snug mb-6">
@@ -24,12 +24,12 @@ export default function Mission() {
         <p className="text-lg text-white/80 leading-relaxed mb-4 max-w-2xl mx-auto">
           MailRecap was built for people who want more control over their household and less stress from the stuff that piles up. We believe that managing your mail should take minutes, not hours — and that everyone deserves clarity on what matters.
         </p>
-        <p className="text-xl font-semibold text-[#E07B54] mb-10">
+        <p className="text-xl font-semibold text-[#D42232] mb-10">
           Mail made simple.
         </p>
         <a
           href="#download"
-          className="inline-flex items-center gap-2 bg-[#E07B54] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#C5623A] transition-colors text-lg shadow-lg shadow-black/20"
+          className="inline-flex items-center gap-2 bg-[#D42232] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#b01c29] transition-colors text-lg shadow-lg shadow-black/20"
         >
           Start for Free
           <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
